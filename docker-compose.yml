@@ -28,7 +28,7 @@ services:
     volumes:
       #- /etc/timezone:/etc/timezone:ro
       #- /etc/localtime:/etc/localtime:ro
-      # - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
+      - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
       - ./addons/addons:/mnt/extra-addons
       - ./addons/enterprise:/mnt/enterprise-addons
       - ./etc:/etc/odoo
